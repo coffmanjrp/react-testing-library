@@ -6,7 +6,7 @@ const TodoFooter = ({ numberOfIncompleteTasks }) => {
     <div className="todo-footer">
       <p>
         {numberOfIncompleteTasks}{' '}
-        {numberOfIncompleteTasks === 1 ? 'task' : 'taskss'} left`
+        {numberOfIncompleteTasks === 1 ? 'task' : 'tasks'} left
       </p>
       <Link to="/Followers">Followers</Link>
     </div>
