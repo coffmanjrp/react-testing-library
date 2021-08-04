@@ -1,3 +1,4 @@
+import { v4 } from 'uuid';
 import TodoFooter from '../TodoFooter/TodoFooter';
 import './TodoList.css';
 
@@ -28,8 +29,10 @@ const TodoList = ({ todos, setTodos }) => {
         <div>
           {todos.map((todo, index) => (
             <div
+              key={index}
               className={`todo-item ${todo.completed && 'todo-item-active'}`}
               onClick={() => updateTask(todo.id)}
+              data-testid={'task-container'}
             >
               {todo.task}
             </div>

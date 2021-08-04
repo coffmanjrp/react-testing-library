@@ -4,7 +4,7 @@ import './TodoFooter.css';
 const TodoFooter = ({ numberOfIncompleteTasks }) => {
   return (
     <div className="todo-footer">
-      <p>
+      <p data-testid="paragraph">
         {numberOfIncompleteTasks}{' '}
         {numberOfIncompleteTasks === 1 ? 'task' : 'tasks'} left
       </p>
